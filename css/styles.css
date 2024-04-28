@@ -8,7 +8,7 @@
     --extra-color-2:#EB0029;
     --extra-color-3:#F8F9FA;
     --extra-color-4:#3E4855;
-
+    --extra-color-5:#0F3B73;
 }
 
 /* Importación de Tipografía de fontawesome */
@@ -125,4 +125,36 @@ header nav>div{
 
 /*========================== Inicio Estilos Footer ================= */
 
+#footer{
+    background: var(--extra-color-5)!important;
+}
+
+.footer__item{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer__section2 div:nth-child(4) a{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.footer__section2 div a:hover{
+    text-decoration: underline;
+}
+
+.icons-container-outer{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    display: flex;
+}
+
+.icons-container-inner{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
 /*========================== Fin Estilos Footer ================= */
