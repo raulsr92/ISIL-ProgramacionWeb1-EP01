@@ -7,6 +7,8 @@
 	--extra-color-1:#CCCFD2;
     --extra-color-2:#EB0029;
     --extra-color-3:#F8F9FA;
+    --extra-color-4:#3E4855;
+
 }
 
 /* Importación de Tipografía de fontawesome */
@@ -84,6 +86,30 @@ header nav>div{
     column-gap: 20px;
 }
 
+.navbar__item{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.navbar__item:hover{
+    color: var(--secondary-color);
+}
+
+.navbar__items-container{
+    display: flex;
+    column-gap: 12px;
+}
+
+.enlace-icon-header{
+    color: var(--extra-color-4);
+    font-size: 1.2rem;
+    transition: all 200ms ease-in-out;
+}
+
+.enlace-icon-header:hover{
+    color: var(--secondary-color);
+
+}
 /*========================== Fin Estilos Cabecera ================= */
 
 
