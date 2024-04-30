@@ -2,8 +2,18 @@
 
 Swal.fire({
     title: "Bienvenidos a la Tienda Blanquiazul",
-    text: "Elige tu producto favorito",
-    icon: "success"
+    text: "Encuentra tu producto favorito",
+    imageUrl: "/img/AL-logo-dorado.png",
+    background: "#0F3B73",
+    color:"#807C5A",
+    confirmButtonColor: "#807C5A",
+    confirmButtonText: "INGRESAR",
+    backdrop: `
+    rgba(0, 13, 30,0.6)
+    url("./img/background-barra.jpeg")
+    left top
+    repeat 
+    `
 });
 
 // Crear objeto de productos de la tienda
