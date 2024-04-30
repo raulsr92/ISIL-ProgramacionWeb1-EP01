@@ -80,7 +80,27 @@ const productos =[
     }
 ]
 
+//Capturar contenedor de la imagen de la card
 
+let cardsContenedor = document.querySelector("#cards-container");
+console.log(cardsContenedor);
+
+
+ 
 productos.forEach((element)=>{
     console.log(element.imagen)
+
+    cardsContenedor.innerHTML += `
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card card-container">
+                <a href="#" class="enlace-img-products"><img src="${element.imagen}" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title p-cards text-center">${element.producto}</h5>
+                    <p class="p-cards p-cards__intimo text-center mb-2">S/ ${element.precioIntimo} <span class="badge text-bg-danger">Precio íntimo</span></p>
+                    <p class="p-cards text-center mb-3">S/ ${element.precio}</p>
+                    <a href="#" class="btn btn-primary btn-main w-100">¡Lo quiero!</a>
+                </div>
+            </div>
+        </div>`
 })
+
