@@ -140,6 +140,7 @@ header nav>div{
     display: flex;
     column-gap: 10px;
     align-items: center;
+    justify-content: center;
 }
 
 .footer__section2 div a:hover{
@@ -147,7 +148,7 @@ header nav>div{
 }
 
 .icons-container-outer{
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 40px;
     display: flex;
 }
@@ -157,4 +158,36 @@ header nav>div{
     justify-content: center;
     column-gap: 30px;
 }
+
+.icons-container__unit{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.icons-container__unit a{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 50%;
+    color: var(--secondary-color);
+}
+
+.icons-container__unit a:hover{
+    font-size: 27px;
+
+    background: var(--tertiary-color);
+}
+
+.text-rights__message{
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+
 /*========================== Fin Estilos Footer ================= */
