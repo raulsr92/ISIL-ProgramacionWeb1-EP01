@@ -1,3 +1,10 @@
+// Alert al cargar la página
+
+Swal.fire({
+    title: "Bienvenidos a la Tienda Blanquiazul",
+    text: "Elige tu producto favorito",
+    icon: "success"
+});
 
 // Crear objeto de productos de la tienda
 
