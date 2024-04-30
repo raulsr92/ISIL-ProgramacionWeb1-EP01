@@ -9,6 +9,8 @@
     --extra-color-3:#F8F9FA;
     --extra-color-4:#3E4855;
     --extra-color-5:#0F3B73;
+    --extra-color-6:#6A664A;
+
 }
 
 /* Importación de Tipografía de fontawesome */
@@ -119,6 +121,31 @@ header nav>div{
     object-fit: cover;
 }
 
+.btn-main{
+    background: var(--secondary-color)!important;
+    border-radius: 50px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-main:hover{
+    background: var(--extra-color-6)!important;
+}
+
+.p-cards{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.p-cards__intimo{
+    color: var(--extra-color-2);
+}
+
+.card-container{
+    border: 0;
+}
+
 /*========================== Fin Estilos Main ================= */
 
 
@@ -180,7 +207,6 @@ header nav>div{
 
 .icons-container__unit a:hover{
     font-size: 27px;
-
     background: var(--tertiary-color);
 }
 
