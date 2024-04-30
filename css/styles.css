@@ -170,6 +170,29 @@ h2{
     overflow: hidden;
 }
 
+.publicity-section__right img{
+    width: 100%;
+}
+
+.publicity-section__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    text-align: center;
+}
+
+.title-publicity{
+    font-size: 40px;
+    font-style: italic;
+}
+
+.title-publicity span{
+    color: var(--secondary-color);
+}
+
+
 /*========================== Fin Estilos Main ================= */
 
 
