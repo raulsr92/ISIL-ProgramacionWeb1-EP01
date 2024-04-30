@@ -34,7 +34,12 @@
 
 /*========================== Inicio Estilos Cabecera ================= */
 
-
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .075);
+}
 
 header nav{
     padding: 0px !important;
