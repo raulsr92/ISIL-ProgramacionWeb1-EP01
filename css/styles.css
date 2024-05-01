@@ -271,5 +271,14 @@ h2{
     font-weight: 600;
 }
 
-
 /*========================== Fin Estilos Footer ================= */
+
+
+/*========================== Inicio Estilos Formulario ================= */
+
+.form-container{
+    width: 70%;
+    background: var(--extra-color-3);
+}
+
+/*========================== Fin Estilos Formulario ================= */

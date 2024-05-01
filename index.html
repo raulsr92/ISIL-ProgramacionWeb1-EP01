@@ -192,6 +192,74 @@
 
         </div>
       </section>
+
+      <section class="form-container">
+        <h1 >REGÍSTRATE</h1>
+        <div>
+          <a href="#">Regístrate</a>
+          <a href="#">Iniciar Sesión</a>
+        </div>
+        <div>
+          <h2>Completa tus datos</h2>
+          <p>Recuerda: La contraseña debe tener letras mayúsculas y minúsculas más un número como mínimo para ser aceptada(min. 6 caracteres).</p>
+        </div>
+
+        <form action="">
+          <input type="text" name="nombre" id="nombre" value="" placeholder="Nombres">
+          <input type="text" name="apellido" id="apellido" value="" placeholder="Apellidos">
+          <input type="text" name="apellido" id="correo" value="" placeholder="Correo">
+          <input type="password" name="password" id="password" value="" placeholder="Contraseña">
+          <input type="number" name="telefono" id="telefono" value="" placeholder="Teléfono">
+          <div>
+            <select name="documento_tipo" id="documento_tipo">
+              <option value="#" selected disabled> Selecciona tipo de documento</option>
+              <option value="01"> DNI </option>
+              <option value="02"> Carnet Extranjeria </option>
+              <option value="03"> Pasaporte </option>
+            </select>
+            <input type="number" name="documento_tipo" id="documento_tipo" value="" >          
+          </div>
+          <div>
+            <select name="pais" id="pais">
+              <option value="01" selected > Perú</option>
+              <option value="02"> Venezuela </option>
+              <option value="03"> Ecuador </option>
+              <option value="04"> Colombia </option>
+              <option value="05"> Chile </option>
+            </select>
+
+            <select name="ciudad" id="ciudad">
+              <option value="01" selected > Lima</option>
+              <option value="02"> Arequipa</option>
+              <option value="03"> Moquegua </option>
+              <option value="04"> Huancayo </option>
+              <option value="05"> Piura </option>
+            </select>
+          </div>
+          <select name="genero" id="genero">
+            <option value="01" selected > Selecciona tu genero</option>
+            <option value="02"> Masculino</option>
+            <option value="03"> Femenino </option>
+          </select>
+
+          <div>
+            <input type="checkbox">
+            <label for="">He leído y acepto los términos y Condiciones .</label>
+          </div>
+          <div>
+            <input type="checkbox">
+            <label for="">¿Usted ha leído y acepta los términos y condiciones para el tratamiento de sus datos personales contenidos en la Política de Privacidad Web ?.</label>
+          </div>
+          <div>
+            <input type="checkbox">
+            <label for="">¿Usted desea qué CLUB ALIANZA LIMA envíe información y/o promociones que ofrece?.</label>
+          </div>
+
+          <button type="submit">Suscríbete</button>
+        </form>
+
+        <p>Ya tienes una cuenta. Inicia sesión aquí</p>
+      </section>
     </main>
 
     <footer id="footer" class="pb-4 pt-5 bg-black">
