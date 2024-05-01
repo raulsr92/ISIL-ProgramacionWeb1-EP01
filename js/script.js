@@ -127,7 +127,6 @@ productos.forEach((element)=>{
 
 // Paso 1: Capturar al carrito de compras a través de su ID
 
-
 let cart = document.querySelector("#cartShopping")
 console.log(cart)
 
@@ -153,3 +152,38 @@ function showCart() {
         confirmButtonColor: "#807C5A",
       });
 }
+
+// =================== Interacción N° 04: Evento de Click al icono de USUARIO (inicio sesión)
+
+// Paso 1: Capturar al ícono de usuario a través de su ID
+
+let userIcon = document.querySelector("#userEnter")
+console.log(userIcon)
+
+// Paso 2: Capturar al formulario
+
+let formRegistration = document.querySelector(".form-container")
+
+// Paso 3: Declarar evento de click
+
+userIcon.addEventListener("click", showForm);
+
+function showForm() {
+    formRegistration.classList.toggle("inactive")    
+}
+
+/*
+// Paso 4: Complementar que al hacer click en cualquier parte de la página y el formulario este en pantalla, se oculte
+
+window.addEventListener("click", hideForm)
+
+function hideForm() {
+    const isFormClosed = formRegistration.classList.contains("inactive")
+    console.log(isFormClosed)
+
+    if (!isFormClosed ) {
+        formRegistration.classList.add("inactive")
+    }
+
+}
+*/
