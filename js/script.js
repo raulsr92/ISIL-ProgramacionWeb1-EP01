@@ -1,4 +1,4 @@
-// Alert al cargar la página
+// =================== Interacción N° 01: Alert al cargar la página
 
 Swal.fire({
     title: "Bienvenidos a la Tienda Blanquiazul",
@@ -16,7 +16,9 @@ Swal.fire({
     `
 });
 
-// Crear objeto de productos de la tienda
+// =================== Interacción N° 02: Cargar la lista de productos desde un array de objetos
+
+// Paso 1: Crear objeto de productos de la tienda
 
 const productos =[
     {
@@ -97,13 +99,13 @@ const productos =[
     }
 ]
 
-//Capturar contenedor de la imagen de la card
+// Paso 2: Capturar contenedor de las cards
 
 let cardsContenedor = document.querySelector("#cards-container");
 console.log(cardsContenedor);
-
-
  
+// Paso 3: Recorrer el array de objetos con el método forEach() para añadir contenido a la página desde JavaScript
+
 productos.forEach((element)=>{
     console.log(element.imagen)
 
@@ -121,3 +123,33 @@ productos.forEach((element)=>{
         </div>`
 })
 
+// =================== Interacción N° 03: Evento de Click al carrito de compras
+
+// Paso 1: Capturar al carrito de compras a través de su ID
+
+
+let cart = document.querySelector("#cartShopping")
+console.log(cart)
+
+// Paso 2: Declarar evento de click
+
+cart.addEventListener("click", showCart);
+
+function showCart() {
+    console.log("Hola")
+    Swal.fire({
+        title: "<strong>CARRITO DE COMPRAS</strong>",
+        html: `
+          <p>Tu carrito de compras esta vacío</p>
+        `,
+        showCloseButton: true,
+        showCancelButton: false,
+        focusConfirm: true,
+        confirmButtonText: `
+          <i class="fa fa-thumbs-up"></i> OK
+        `,
+        background: "#CCCFD2",
+        color:"#000D1E",
+        confirmButtonColor: "#807C5A",
+      });
+}
