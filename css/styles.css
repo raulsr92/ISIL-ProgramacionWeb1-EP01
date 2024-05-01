@@ -295,17 +295,53 @@ h2{
 .form__title{
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+    color: var(--main-color);
 }
 
 .form__options{
     grid-column: 1 / 3;
-    grid-row: 2 / 3;
+    grid-row: 2 / 3;  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
+
+.form__options a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--extra-color-5);
+    font-weight: 600;
+    padding: 8px 0px;
+    font-size: 16px;
+}
+
+.form__options a:nth-child(1){
+    border-left: 1px solid var(--extra-color-7);
+    border-top: 1px solid var(--extra-color-7);
+    border-right: 1px solid var(--extra-color-7);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.form__options a:nth-child(2){
+    border-bottom: 1px solid var(--extra-color-7);
+}
+
 
 .form__information{
     grid-column: 1 / 3;
     grid-row: 3 / 4;
     padding: 0 15px;
+}
+
+.form__information p{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form__information p span{
+    color: var(--main-color);
+    font-weight: 600;
 }
 
 form{
@@ -314,7 +350,7 @@ form{
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(10, auto);
-    row-gap: 15px;
+    row-gap: 20px;
     padding: 0 15px;
 }
 
@@ -322,6 +358,8 @@ form{
     grid-column: 1 / 3;
     grid-row: 5 / 6;
     justify-self: center;
+    font-size: 16px;
+    margin-top: 15px;
 }
 
 #nombre{
@@ -373,17 +411,35 @@ form{
     grid-row: 9 / 10;
     display: grid;
     row-gap: 5px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+}
+
+.form__terms div:nth-child(1){
+    grid-column: 1 / 2;
+    grid-row: 1 / 2
+}
+
+.form__terms div:nth-child(2){
+    grid-column: 1 / 2;
+    grid-row: 2 / 3
+}
+
+.form__terms div:nth-child(3){
+    grid-column: 1 / 2;
+    grid-row: 3 / 4
 }
 
 .form__terms div{
-    display: flex;
-    align-items: start;
-    column-gap: 5px;
+    display: grid;
+    grid-template-columns: 3% 97%;
+    column-gap: 10px;
 }
 
 .form__terms label{
     font-size: 16px;
     color: var(--secondary-color);
+    line-height: 20px;
 }
 
 .btn-form{
@@ -407,11 +463,18 @@ input[type="text"], input[type="password"], select{
 input[type="text"], input[type="password"]{
     color: var(--extra-color-5);
     font-size: 16px;
+    caret-color: var(--secondary-color); /*Propiedad para cambiar el color del cursor*/
 }
 
-input[type="text"]:focus, input[type="password"]:focus, select:focus{
+input[type="text"]:focus, input[type="password"]:focus, select:focus, input[type="checkbox"]:focus{
     outline: 4px solid var(--extra-color-9);
     border: 1px solid var(--secondary-color);
+}
+
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    accent-color: var(--secondary-color); /*Propiedad para cambiar el color del checkbox al ser marcado*/
 }
 
 /* estilos del atributo place holder*/
@@ -421,5 +484,20 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
 	font-size: 16px;
 }
 
+.btn-form{
+    width: 80%;
+    justify-self: center;
+    margin-top: 25px;
+}
+
+.form__option a{
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.form__option a:hover{
+    text-decoration: underline;
+}
 
 /*========================== Fin Estilos Formulario ================= */
