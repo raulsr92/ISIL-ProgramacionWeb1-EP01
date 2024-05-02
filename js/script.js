@@ -172,8 +172,19 @@ function showForm() {
     formRegistration.classList.toggle("inactive")    
 }
 
+// Paso 4: Complementar que al hacer click X se cierreel formulario
+
+let closeIcon = document.querySelector(".icon-closed");
+
+closeIcon.addEventListener("click", closeForm)
+
+function closeForm() {
+    formRegistration.classList.add("inactive")
+}
+
+
 /*
-// Paso 4: Complementar que al hacer click en cualquier parte de la página y el formulario este en pantalla, se oculte
+// Paso 5: Complementar que al hacer click en cualquier parte de la página y el formulario este en pantalla, se oculte
 
 window.addEventListener("click", hideForm)
 

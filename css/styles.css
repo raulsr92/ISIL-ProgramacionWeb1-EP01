@@ -511,8 +511,13 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
     text-decoration: underline;
 }
 
-.inactive{
-    display: none;
+.icon-closed{
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    position:absolute;
+    top:2%;
+    right: 4%;
+    cursor: pointer;
 }
 
 /*========================== Fin Estilos Formulario ================= */
@@ -569,7 +574,16 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
     .form-container{
         width: 90%;
         left: 5%;
+        padding:20px 15px
     }
+    .form__title{
+        font-size: 28px;
+    }
+
+}
+
+.inactive{
+    display: none;
 }
 
 /*========================== Fin Media queries ================= */
