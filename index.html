@@ -1,117 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EP01 - Raul Sanchez Rodriguez</title>
     <!--Inicio Instalador Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+
     <!--Fin Instalador Bootstrap CSS-->
 
     <!--Inicio Instalador sweetalert-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css">
+    
+    
     <!--Fin Instalador sweetalert-->
 
-    <link rel="stylesheet" href="./css/styles.css"> <!--Mi archivo CSS-->
-</head>
-<body id="body">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!--Mi archivo CSS-->
+  </head>
+
+  <body id="body">
     <header class="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid pe-3 ps-lg-0 ps-0">
-              <a class="navbar-brand enlace-icon-club" href="#">
-                <img src="./img/alianza-lima-logo.png" alt="" style="width: 40px;">
-                <span>Alianza </span>
-                <span>Lima</span> 
-              </a>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid pe-3 ps-lg-0 ps-0">
+          <a class="navbar-brand enlace-icon-club" href="#">
+            <img src="./img/alianza-lima-logo.png" alt="" style="width: 40px" />
+            <span>Alianza </span>
+            <span>Lima</span>
+          </a>
 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-3 text-center text-lg-start navbar__items-container">
-                  <li class="nav-item">
-                    <a class="nav-link navbar__item" aria-current="page" href="#">CAMISETAS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link navbar__item" href="#">SOUVENIRS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link navbar__item" href="#">BANDERAS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link navbar__item" href="#">TODOS</a>
-                  </li>
-                  <!--<li class="nav-item">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 ps-3 text-center text-lg-start navbar__items-container"
+            >
+              <li class="nav-item">
+                <a class="nav-link navbar__item" aria-current="page" href="#">CAMISETAS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar__item" href="#">SOUVENIRS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar__item" href="#">BANDERAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar__item" href="#">TODOS</a>
+              </li>
+              <!--<li class="nav-item">
                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                   </li>-->
-                </ul>
+            </ul>
 
-                <div class="navbar__icons-container p-2 p-lg-0 justify-content-center">
-                    <a href="">
-                        <img src="./img/logo-dark-apueta-total-vertical.png" alt="" style="width:90px">
-                    </a>
-                    <div>
-                      <a href="#" class="enlace-icon-header">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                      </a>
-                      <a href="#" class="enlace-icon-header" id="cartShopping">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </a>
-                      <a href="#" class="enlace-icon-header" id="userEnter">
-                        <i class="fa-solid fa-user"></i>
-                      </a>
-                    </div>
-                </div>
+            <div
+              class="navbar__icons-container p-2 p-lg-0 justify-content-center"
+            >
+              <a href="">
+                <img
+                  src="./img/logo-dark-apueta-total-vertical.png"
+                  alt=""
+                  style="width: 90px"
+                />
+              </a>
+              <div>
+                <a href="#" class="enlace-icon-header">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#" class="enlace-icon-header" id="cartShopping">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="#" class="enlace-icon-header" id="userEnter">
+                  <i class="fa-solid fa-user"></i>
+                </a>
+              </div>
+            </div>
 
-                <!--
+            <!--
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
                 -->
-              </div>
-
-
-            </div>
-          </nav>
+          </div>
+        </div>
+      </nav>
     </header>
+
     <main class="main">
       <section class="carousel--container">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-pause="false"
+        >
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./img/banner-AL-1.png" class="d-block w-100" alt="...">
+              <img
+                src="./img/banner-AL-1.png"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="carousel-item">
-              <img src="./img/banner_AL-2.png" class="d-block w-100" alt="...">
+              <img
+                src="./img/banner_AL-2.png"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="carousel-item">
-              <img src="./img/banner-AL-3.jpg" class="d-block w-100" alt="...">
+              <img
+                src="./img/banner-AL-3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
       </section>
 
-      <section class="container mt-5 mb-4" >
+      <section class="container mt-5 mb-4">
         <div class="row mb-4">
           <div class="col">
-            <h1 class="text-center">PRODUCTOS DESTACADOS</h1>
+            <h1 class="text-center mainTitle">PRODUCTOS DESTACADOS</h1>
             <h2 class="text-center">TIENDA BLANQUIAZUL</h2>
           </div>
         </div>
-       
+
         <div class="row" id="cards-container">
-        <!--
+          <!--
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card card-container">
               <a href="#" class="enlace-img-products"><img src="./img/Producto1.jpg" class="card-img-top" alt="...">
@@ -126,218 +174,345 @@
           </div>
            -->
         </div>
-     
       </section>
 
       <section class="container-fluid publicity-section mt-5">
         <div class="row">
           <div class="col-12 col-lg-6 publicity-section__left pb-3 pb-lg-0">
-            <h1 class="title-publicity">CAMISETA <span>OFICIAL</span></h1>
+            <h1 class="title-publicity">
+              CAMISETA <span class="spanEdited">OFICIAL</span>
+            </h1>
             <p>Cómprale al club y personaliza nuestra piel blanquiazul.</p>
-            <a href="#" class="btn btn-primary btn-main" id="btnComprar">Comprar ahora</a>
+            <a href="#" class="btn btn-primary btn-main" id="btnComprar"
+              >Comprar ahora</a
+            >
           </div>
           <div class="col-12 col-lg-6 publicity-section__right p-0">
-            <img src="./img/img-big-1.jpg" alt="">
+            <img src="./img/img-big-1.jpg" alt="" />
           </div>
         </div>
       </section>
 
       <section class="container-fluid publicity-section mt-5 mt-lg-0">
         <div class="row">
-          <div class="col-12 col-lg-6 publicity-section__left pb-3 pb-lg-0 ps-lg-4 pe-lg-4 d-flex d-lg-none">
-            <h1 class="title-publicity">CAMISETA <span>VISITANTE</span></h1>
-            <p>Compra tu camiseta junto a muchos otros productos y recíbelo en un solo envío.</p>
-            <a href="#" class="btn btn-primary btn-main" id="btnComprar">Comprar ahora</a>
+          <div
+            class="col-12 col-lg-6 publicity-section__left pb-3 pb-lg-0 ps-lg-4 pe-lg-4 d-flex d-lg-none"
+          >
+            <h1 class="title-publicity">
+              CAMISETA <span class="spanEdited">VISITANTE</span>
+            </h1>
+            <p>
+              Compra tu camiseta junto a muchos otros productos y recíbelo en un
+              solo envío.
+            </p>
+            <a href="#" class="btn btn-primary btn-main" id="btnComprar"
+              >Comprar ahora</a
+            >
           </div>
           <div class="col-12 col-lg-6 publicity-section__right p-0">
-            <img src="./img/img-big-2.jpg" alt="">
+            <img src="./img/img-big-2.jpg" alt="" />
           </div>
-          <div class="col-12 col-lg-6 publicity-section__left pb-3 pb-lg-0 ps-lg-4 pe-lg-4 d-none d-lg-flex">
-            <h1 class="title-publicity">CAMISETA <span>VISITANTE</span></h1>
-            <p>Compra tu camiseta junto a muchos otros productos y recíbelo en un solo envío.</p>
-            <a href="#" class="btn btn-primary btn-main" id="btnComprar">Comprar ahora</a>
+          <div
+            class="col-12 col-lg-6 publicity-section__left pb-3 pb-lg-0 ps-lg-4 pe-lg-4 d-none d-lg-flex"
+          >
+            <h1 class="title-publicity">
+              CAMISETA <span class="spanEdited">VISITANTE</span>
+            </h1>
+            <p>
+              Compra tu camiseta junto a muchos otros productos y recíbelo en un
+              solo envío.
+            </p>
+            <a href="#" class="btn btn-primary btn-main" id="btnComprar"
+              >Comprar ahora</a
+            >
           </div>
-
         </div>
       </section>
 
       <section class="container-fluid publicity-section mt-5 mt-lg-0">
         <div class="row">
           <div class="col-12 col-lg-6 publicity-section__left pb-3 pb-lg-0">
-            <h1 class="title-publicity">SOUVENIRS <span>OFICIALES</span></h1>
+            <h1 class="title-publicity">
+              SOUVENIRS <span class="spanEdited">OFICIALES</span>
+            </h1>
             <p>Todos los productos oficiales del club en un solo lugar.</p>
-            <a href="#" class="btn btn-primary btn-main" id="btnComprar">Comprar ahora</a>
+            <a href="#" class="btn btn-primary btn-main" id="btnComprar"
+              >Comprar ahora</a
+            >
           </div>
           <div class="col-12 col-lg-6 publicity-section__right p-0">
-            <img src="./img/img-big-3.png" alt="">
+            <img src="./img/img-big-3.png" alt="" />
           </div>
         </div>
       </section>
 
       <section class="container-fluid publicity-section mt-5 mt-lg-0 mb-5">
         <div class="row">
-          <div class="col-12 col-lg-6 publicity-section__left pb-3 pb-lg-0 ps-lg-4 pe-lg-4 d-flex d-lg-none">
-            <h1 class="title-publicity">BANDERAS <span>OFICIALES</span></h1>
+          <div
+            class="col-12 col-lg-6 publicity-section__left pb-3 pb-lg-0 ps-lg-4 pe-lg-4 d-flex d-lg-none"
+          >
+            <h1 class="title-publicity">
+              BANDERAS <span class="spanEdited">OFICIALES</span>
+            </h1>
             <p>Demuestra el orgullo de ser parte del equipo del pueblo.</p>
-            <a href="#" class="btn btn-primary btn-main" id="btnComprar">Comprar ahora</a>
+            <a href="#" class="btn btn-primary btn-main" id="btnComprar"
+              >Comprar ahora</a
+            >
           </div>
           <div class="col-12 col-lg-6 publicity-section__right p-0">
-            <img src="./img/img-big-4.jpg" alt="">
+            <img src="./img/img-big-4.jpg" alt="" />
           </div>
-          <div class="col-12 col-lg-6 publicity-section__left pb-3 pb-lg-0 ps-lg-4 pe-lg-4 d-none d-lg-flex">
-            <h1 class="title-publicity">BANDERAS <span>OFICIALES</span></h1>
+          <div
+            class="col-12 col-lg-6 publicity-section__left pb-3 pb-lg-0 ps-lg-4 pe-lg-4 d-none d-lg-flex"
+          >
+            <h1 class="title-publicity">
+              BANDERAS <span class="spanEdited">OFICIALES</span>
+            </h1>
             <p>Demuestra el orgullo de ser parte del equipo del pueblo.</p>
-            <a href="#" class="btn btn-primary btn-main" id="btnComprar">Comprar ahora</a>
+            <a href="#" class="btn btn-primary btn-main" id="btnComprar"
+              >Comprar ahora</a
+            >
           </div>
-
         </div>
       </section>
 
       <section class="form-container inactive">
         <i class="fa-solid fa-circle-xmark icon-closed"></i>
-        <h1 class="form__title" >REGÍSTRATE</h1>
+        <h1 class="form__title">REGÍSTRATE</h1>
         <div class="form__options">
           <a href="#">Regístrate</a>
           <a href="#">Iniciar Sesión</a>
         </div>
         <div class="form__information">
           <h2>Completa tus datos</h2>
-          <p> <span>Recuerda:</span> La contraseña debe tener letras mayúsculas y minúsculas más un número como mínimo para ser aceptada(min. 6 caracteres).</p>
+          <p>
+            <span>Recuerda:</span> La contraseña debe tener letras mayúsculas y
+            minúsculas más un número como mínimo para ser aceptada(min. 6
+            caracteres).
+          </p>
         </div>
 
         <form action="">
-          <input type="text" name="nombre" id="nombre" value="" placeholder="Nombres">
-          <input type="text" name="apellido" id="apellido" value="" placeholder="Apellidos">
-          <input type="text" name="apellido" id="correo" value="" placeholder="Correo">
-          <input type="password" name="password" id="password" value="" placeholder="Contraseña">
-          <input type="text" name="telefono" id="telefono" value="" placeholder="Teléfono">
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            value=""
+            placeholder="Nombres"
+          />
+          <input
+            type="text"
+            name="apellido"
+            id="apellido"
+            value=""
+            placeholder="Apellidos"
+          />
+          <input
+            type="text"
+            name="apellido"
+            id="correo"
+            value=""
+            placeholder="Correo"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            value=""
+            placeholder="Contraseña"
+          />
+          <input
+            type="text"
+            name="telefono"
+            id="telefono"
+            value=""
+            placeholder="Teléfono"
+          />
           <div class="form__document minibox">
             <select name="documento_tipo" id="documento_tipo">
-              <option value="#" selected disabled> Selecciona tipo de documento</option>
-              <option value="01"> DNI </option>
-              <option value="02"> Carnet Extranjeria </option>
-              <option value="03"> Pasaporte </option>
+              <option value="#" selected disabled>
+                Selecciona tipo de documento
+              </option>
+              <option value="01">DNI</option>
+              <option value="02">Carnet Extranjeria</option>
+              <option value="03">Pasaporte</option>
             </select>
-            <input type="text" name="documento_tipo" id="documento_tipo" value="" >          
+            <input
+              type="text"
+              name="documento_tipo"
+              id="documento_tipo"
+              value=""
+            />
           </div>
           <div class="form__country minibox">
             <select name="pais" id="pais">
-              <option value="01" selected > Perú</option>
-              <option value="02"> Venezuela </option>
-              <option value="03"> Ecuador </option>
-              <option value="04"> Colombia </option>
-              <option value="05"> Chile </option>
+              <option value="01" selected>Perú</option>
+              <option value="02">Venezuela</option>
+              <option value="03">Ecuador</option>
+              <option value="04">Colombia</option>
+              <option value="05">Chile</option>
             </select>
 
             <select name="ciudad" id="ciudad">
-              <option value="01" selected > Lima</option>
-              <option value="02"> Arequipa</option>
-              <option value="03"> Moquegua </option>
-              <option value="04"> Huancayo </option>
-              <option value="05"> Piura </option>
+              <option value="01" selected>Lima</option>
+              <option value="02">Arequipa</option>
+              <option value="03">Moquegua</option>
+              <option value="04">Huancayo</option>
+              <option value="05">Piura</option>
             </select>
           </div>
           <div class="form__sex">
             <select name="genero" id="genero">
-              <option value="01" selected > Selecciona tu genero</option>
-              <option value="02"> Masculino</option>
-              <option value="03"> Femenino </option>
+              <option value="01" selected>Selecciona tu genero</option>
+              <option value="02">Masculino</option>
+              <option value="03">Femenino</option>
             </select>
           </div>
           <div class="form__terms">
-            <div >
-              <input type="checkbox">
-              <label for="">He leído y acepto los términos y Condiciones .</label>
+            <div>
+              <input type="checkbox" />
+              <label for=""
+                >He leído y acepto los términos y Condiciones .</label
+              >
             </div>
             <div>
-              <input type="checkbox">
-              <label for="">¿Usted ha leído y acepta los términos y condiciones para el tratamiento de sus datos personales contenidos en la Política de Privacidad Web ?.</label>
+              <input type="checkbox" />
+              <label for=""
+                >¿Usted ha leído y acepta los términos y condiciones para el
+                tratamiento de sus datos personales contenidos en la Política de
+                Privacidad Web ?.</label
+              >
             </div>
             <div>
-              <input type="checkbox">
-              <label for="">¿Usted desea qué CLUB ALIANZA LIMA envíe información y/o promociones que ofrece?.</label>
+              <input type="checkbox" />
+              <label for=""
+                >¿Usted desea qué CLUB ALIANZA LIMA envíe información y/o
+                promociones que ofrece?.</label
+              >
             </div>
           </div>
 
-          <button type="submit" class="btn-form btn-main btn-primary btn">Suscríbete</button>
+          <button type="submit" class="btn-form btn-main btn-primary btn">
+            Suscríbete
+          </button>
         </form>
 
-        <p class="form__option mb-2">Ya tienes una cuenta. <a href="#">Inicia sesión aquí</a> </p>
+        <p class="form__option mb-2">
+          Ya tienes una cuenta. <a href="#">Inicia sesión aquí</a>
+        </p>
       </section>
     </main>
 
     <footer id="footer" class="pb-4 pt-5 bg-black">
       <div class="container">
-          <div class="footer__section1 row justify-content-center pb-4">
-            <div class="col-2 d-flex justify-content-center">
-              <img src="./img/AL-logo-dorado.png" alt="" style="width: 150px;">
+        <div class="footer__section1 row justify-content-center pb-4">
+          <div class="col-2 d-flex justify-content-center">
+            <img src="./img/AL-logo-dorado.png" alt="" style="width: 150px" />
+          </div>
+        </div>
+        <div class="footer__section2 row text-center justify-content-center">
+          <div class="col-12 col-lg pt-2 pt-lg-0">
+            <a
+              class="footer__item"
+              href="https://s3.us-west-2.amazonaws.com/joinnus.com/files_alianzalima/T%C3%A9rminos_y_condiciones_del_servicio.pdf"
+              target="_blank"
+              >Términos y Condiciones</a
+            >
+          </div>
+          <div class="col-12 col-lg pt-2 pt-lg-0">
+            <a
+              class="footer__item"
+              href="https://s3-us-west-2.amazonaws.com/joinnus.com/files/Politica+de+Privacidad+Joinnus+-+cookies+v24.02.pdf"
+              target="_blank"
+              >Política de Privacidad</a
+            >
+          </div>
+          <div class="col-12 col-lg pt-2 pt-lg-0">
+            <a
+              class="footer__item"
+              href="https://s3-us-west-2.amazonaws.com/joinnus.com/files/Politica+de+cookies+v24.02.pdf"
+              target="_blank"
+              >Política de Cookies</a
+            >
+          </div>
+          <div class="col-12 col-lg pt-2 pt-lg-0">
+            <a
+              class="footer__item"
+              href="https://reclamos.clubalianzalima.com.pe/"
+              target="_blank"
+              ><i class="fa-solid fa-book-open"></i>Libro de Reclamaciones</a
+            >
+          </div>
+        </div>
+
+        <div class="footer__section3 row icons-container-outer">
+          <div class="icons-container-inner">
+            <div class="icons-container__unit">
+              <a href="https://www.facebook.com/ClubAlianzaLima" target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
             </div>
-          </div>
-          <div class="footer__section2 row text-center justify-content-center">
-              <div class="col-12 col-lg pt-2 pt-lg-0">
-                  <a class="footer__item" href="https://s3.us-west-2.amazonaws.com/joinnus.com/files_alianzalima/T%C3%A9rminos_y_condiciones_del_servicio.pdf" target="_blank">Términos y Condiciones</a>
-              </div>
-              <div class="col-12 col-lg pt-2 pt-lg-0">
-                  <a class="footer__item" href="https://s3-us-west-2.amazonaws.com/joinnus.com/files/Politica+de+Privacidad+Joinnus+-+cookies+v24.02.pdf" target="_blank">Política de Privacidad</a>
-              </div>  
-              <div class="col-12 col-lg pt-2 pt-lg-0">
-                  <a class="footer__item" href="https://s3-us-west-2.amazonaws.com/joinnus.com/files/Politica+de+cookies+v24.02.pdf" target="_blank">Política de Cookies</a>
-              </div>  
-              <div class="col-12 col-lg pt-2 pt-lg-0">
-                  <a class="footer__item" href="https://reclamos.clubalianzalima.com.pe/" target="_blank"><i class="fa-solid fa-book-open"></i>Libro de Reclamaciones</a>
-              </div>
-
-          </div>
-
-          <div class="footer__section3 row icons-container-outer">
-            <div class="icons-container-inner">
-              <div class="icons-container__unit">
-                <a href="https://www.facebook.com/ClubAlianzaLima" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-              </div>
-              <div class="icons-container__unit">
-                <a href="https://twitter.com/ClubALoficial" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-              </div>
-              <div class="icons-container__unit">
-                <a href="https://www.youtube.com/channel/UCiOzKO4dGz2bdXTc7rpOdNg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-              </div>
-              <div class="icons-container__unit">
-                <a href="https://www.instagram.com/alianzalima/" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
-              </div>
-              <!--
+            <div class="icons-container__unit">
+              <a href="https://twitter.com/ClubALoficial" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+            <div class="icons-container__unit">
+              <a
+                href="https://www.youtube.com/channel/UCiOzKO4dGz2bdXTc7rpOdNg"
+                target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+            <div class="icons-container__unit">
+              <a href="https://www.instagram.com/alianzalima/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <!--
               <div class="icons-container__unit">
                 <a href="#" id="spotify"><i class="fa-brands fa-spotify"></i></a>
               </div>
               <div class="icons-container__unit">
                 <a href="#" ><i class="fa-solid fa-music "></i></a>
               </div>-->
-            </div>
-
           </div>
+        </div>
 
-          <div class="footer__section4 row">
-            <div class="col text-center text-rights" >
-              <p class="text-rights__message">Copyright © Joinnus 2024 -Todos los derechos reservados
-              </p>
-            </div>
+        <div class="footer__section4 row">
+          <div class="col text-center text-rights">
+            <p class="text-rights__message">
+              Copyright © Joinnus 2024 -Todos los derechos reservados
+            </p>
           </div>
+        </div>
       </div>
-  </footer>
+    </footer>
 
+    <a href="#" class="enlace-btn-flotante">
+      <i class="fa-solid fa-palette"></i>
+      <p>Cambiar apariencia</p>
+    </a>
 
     <!--Inicio Instalador Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+
     <!--Fin Instalador Bootstrap JS-->
 
     <!--Inicio íconos fontawesome-->
-    <script src="https://kit.fontawesome.com/33e3caf9b6.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/33e3caf9b6.js"
+      crossorigin="anonymous"
+    ></script>
     <!--Fin íconos fontawesome-->
 
     <!--Inicio Instalador sweetalert-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <!--Fin Instalador sweetalert-->
 
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>

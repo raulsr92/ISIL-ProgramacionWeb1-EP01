@@ -1,5 +1,6 @@
 // =================== Interacción N° 01: Alert al cargar la página
 
+
 Swal.fire({
     title: "Bienvenidos a la Tienda Blanquiazul",
     text: "Encuentra tu producto favorito",
@@ -132,6 +133,7 @@ console.log(cart)
 
 // Paso 2: Declarar evento de click
 
+
 cart.addEventListener("click", showCart);
 
 function showCart() {
@@ -153,6 +155,7 @@ function showCart() {
       });
 }
 
+
 // =================== Interacción N° 04: Evento de Click al icono de USUARIO (inicio sesión)
 
 // Paso 1: Capturar al ícono de usuario a través de su ID
@@ -172,7 +175,7 @@ function showForm() {
     formRegistration.classList.toggle("inactive")    
 }
 
-// Paso 4: Complementar que al hacer click X se cierreel formulario
+// Paso 4: Complementar que al hacer click X se cierre el formulario
 
 let closeIcon = document.querySelector(".icon-closed");
 
@@ -221,6 +224,7 @@ function closeHeader() {
 // =================== Interacción N° 05: Evento de Click en botones de "Lo Quiero"
 
 
+
 let btnPurchase = document.getElementsByClassName("btn-main");
 
 console.log(btnPurchase);
@@ -248,5 +252,7 @@ function registerRequirement() {
         confirmButtonColor: "#807C5A",
       });
 }
+
+// =================== Interacción N° 06: Evento de Click en boton flotante
 
 

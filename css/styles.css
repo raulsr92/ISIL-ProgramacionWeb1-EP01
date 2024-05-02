@@ -13,8 +13,7 @@
     --extra-color-7:#CED4DA;
     --extra-color-8:#F8F9FA;
     --extra-color-9:#DFDED6;
-
-
+    --extra-color-10:#185FBA;
 }
 
 /* Importación de Tipografía de fontawesome */
@@ -587,3 +586,44 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
 }
 
 /*========================== Fin Media queries ================= */
+
+/*========================== Inicio Botón Flotante ================= */
+
+.enlace-btn-flotante{
+    background: var(--extra-color-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: var(--extra-color-5);
+    outline: 4px solid var(--extra-color-5);
+    column-gap: 8px;
+    font-weight: 900;
+    position: fixed;
+    right: 1%;
+    bottom: 10%;
+    box-shadow: 0px 0px 10px 5px var(--extra-color-10);
+
+}
+
+.enlace-btn-flotante p{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin: 0;
+}
+
+.enlace-btn-flotante i{
+    font-size: 1.5rem;
+}
+
+.enlace-btn-flotante:hover{
+    color: var(--secondary-color) ;
+    outline: 4px solid var(--secondary-color);
+    box-shadow: 0px 0px 10px 5px var(--secondary-color);
+}
+
+
+/*========================== Fin Botón Flotante ================= */
