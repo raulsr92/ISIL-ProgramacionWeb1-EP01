@@ -1,6 +1,5 @@
 // =================== Interacción N° 01: Alert al cargar la página
 
-
 Swal.fire({
     title: "Bienvenidos a la Tienda Blanquiazul",
     text: "Encuentra tu producto favorito",
@@ -133,7 +132,6 @@ console.log(cart)
 
 // Paso 2: Declarar evento de click
 
-
 cart.addEventListener("click", showCart);
 
 function showCart() {
@@ -154,7 +152,6 @@ function showCart() {
         confirmButtonColor: "#807C5A",
       });
 }
-
 
 // =================== Interacción N° 04: Evento de Click al icono de USUARIO (inicio sesión)
 
@@ -198,10 +195,8 @@ function hideForm() {
     if (!isFormClosed ) {
         formRegistration.classList.add("inactive")
     }
-
 }
 */
-
 
 let hamburgerIcon = document.querySelector(".navbar-toggler");
 
@@ -222,8 +217,6 @@ function closeHeader() {
 }
 
 // =================== Interacción N° 05: Evento de Click en botones de "Lo Quiero"
-
-
 
 let btnPurchase = document.getElementsByClassName("btn-main");
 
@@ -255,4 +248,84 @@ function registerRequirement() {
 
 // =================== Interacción N° 06: Evento de Click en boton flotante
 
+// capturar botón flotante
+let btnFlotante = document.querySelector(".enlace-btn-flotante");
+console.log(btnFlotante)
 
+// capturar array de elementos h1
+let mainTitle = document.querySelector(".mainTitle")
+mainTitle.style.color = "#000D1E"
+console.log(mainTitle.style.color);
+
+//capturar elementos span
+let spanArray = document.getElementsByClassName("spanEdited")
+console.log(spanArray);
+
+// capturar elemento main
+let mainPage = document.querySelector(".main")
+mainPage.style.background = "url(/img/fondo.png)"
+
+// capturar array de elementos h1 de publicidad
+
+let mainElementsArray = document.getElementsByClassName("title-publicity")
+console.log(mainElementsArray);
+for (let j = 0; j < mainElementsArray.length; j++) {
+    mainElementsArray[j].style.color = "#000D1E"
+    console.log(mainElementsArray[j].style.color);
+}
+
+// capturar array de elementos p de publicidad
+
+let pElementsArray = document.getElementsByClassName("parrafo-publicity")
+console.log(pElementsArray);
+for (let j = 0; j < mainElementsArray.length; j++) {
+    pElementsArray[j].style.color = "#000D1E"
+    console.log(mainElementsArray[j].style.color);
+}
+
+
+// llamado a evento click
+btnFlotante.addEventListener("click", cambiarApariencia);
+
+function cambiarApariencia() {
+
+    //Cambiar color de título principal 
+
+    if(mainTitle.style.color == "rgb(0, 13, 30)"){
+        mainTitle.style.color = "#F8F9FA"
+    } else{
+        mainTitle.style.color = "#000D1E"
+    }
+
+
+    // Cambiar imagen fondo de la página
+
+    if (mainPage.style.background == 'url("/img/fondo.png")') {
+        mainPage.style.background = "url(/img/fondo2.jpg)"
+    } else{
+        mainPage.style.background = "url(/img/fondo.png)"
+    }
+
+    // Cambiar color de títulos de publicidad
+
+    for (let i = 0; i < mainElementsArray.length; i++) {
+        if(mainElementsArray[i].style.color == "rgb(0, 13, 30)"){
+            mainElementsArray[i].style.color = "#F8F9FA"
+        } else{
+            mainElementsArray[i].style.color = "#000D1E"
+        }
+    
+    }
+
+    // Cambiar color de párrafos de publicidad
+
+    for (let i = 0; i < pElementsArray.length; i++) {
+        if(pElementsArray[i].style.color == "rgb(0, 13, 30)"){
+            pElementsArray[i].style.color = "#F8F9FA"
+        } else{
+            pElementsArray[i].style.color = "#000D1E"
+        }
+    
+    }
+
+}
