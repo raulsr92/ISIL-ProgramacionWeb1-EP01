@@ -130,11 +130,11 @@ header nav>div{
 /*========================== Inicio Estilos Main ================= */
 
 .backgroundWhite{
-    background-image: url(/img/fondo.png);
+    background-image: url(../img/fondo.png);
 }
 
 .backgroundBlack{
-    background-image: url(/img/fondo2.jpg);
+    background-image: url(../img/fondo2.jpg);
 }
 
 
