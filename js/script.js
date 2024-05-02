@@ -198,3 +198,25 @@ function hideForm() {
 
 }
 */
+
+
+let hamburgerIcon = document.querySelector(".navbar-toggler");
+
+let navbarCollapse = document.querySelector(".navbar-collapse")
+
+console.log(navbarCollapse)
+navbarCollapse.style = "display: none";
+
+hamburgerIcon.addEventListener("click", closeHeader);
+
+function closeHeader() {
+    if (navbarCollapse.style.display == "block" ) {
+        navbarCollapse.style.display = "none"
+        } else if(navbarCollapse.style.display == "none"){
+            navbarCollapse.style.display = "block"
+        }
+        
+
+}
+
+
