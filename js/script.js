@@ -16,7 +16,7 @@ Swal.fire({
     `
 });
 
-// =================== Interacción N° 02: Cargar la lista de productos desde un array de objetos
+// ====================================== Interacción N° 02: Cargar la lista de productos desde un array de objetos
 
 // Paso 1: Crear objeto de productos de la tienda
 
@@ -110,7 +110,7 @@ productos.forEach((element)=>{
     console.log(element.imagen)
 
     cardsContenedor.innerHTML += `
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-11 col-md-6 col-lg-3 pb-3">
             <div class="card card-container">
                 <a href="#" class="enlace-img-products"><img src="${element.imagen}" class="card-img-top" alt="..."></a>
                 <div class="card-body">
@@ -123,7 +123,7 @@ productos.forEach((element)=>{
         </div>`
 })
 
-// =================== Interacción N° 03: Evento de Click al carrito de compras
+// ====================================== Interacción N° 03: Evento de Click al carrito de compras
 
 // Paso 1: Capturar al carrito de compras a través de su ID
 
@@ -153,7 +153,7 @@ function showCart() {
       });
 }
 
-// =================== Interacción N° 04: Evento de Click al icono de USUARIO (inicio sesión)
+// ====================================== Interacción N° 04: Evento de Click al icono de USUARIO (inicio sesión)
 
 // Paso 1: Capturar al ícono de usuario a través de su ID
 
@@ -216,7 +216,7 @@ function closeHeader() {
         
 }
 
-// =================== Interacción N° 05: Evento de Click en botones de "Lo Quiero"
+// ====================================== Interacción N° 05: Evento de Click en botones de "Lo Quiero"
 
 let btnPurchase = document.getElementsByClassName("btn-main");
 
@@ -246,7 +246,7 @@ function registerRequirement() {
       });
 }
 
-// =================== Interacción N° 06: Evento de Click en boton flotante
+// ====================================== Interacción N° 06: Evento de Click en boton flotante
 
 // capturar botón flotante
 let btnFlotante = document.querySelector(".enlace-btn-flotante");
