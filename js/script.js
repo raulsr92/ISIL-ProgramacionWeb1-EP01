@@ -263,7 +263,7 @@ console.log(spanArray);
 
 // capturar elemento main
 let mainPage = document.querySelector(".main")
-mainPage.style.background = "url(/img/fondo.png)"
+mainPage.style.background = 'url("/img/fondo.png")';
 
 // capturar array de elementos h1 de publicidad
 
@@ -301,9 +301,9 @@ function cambiarApariencia() {
     // Cambiar imagen fondo de la página
 
     if (mainPage.style.background == 'url("/img/fondo.png")') {
-        mainPage.style.background = "url(/img/fondo2.jpg)"
+        mainPage.style.background = 'url("/img/fondo2.jpg")'
     } else{
-        mainPage.style.background = "url(/img/fondo.png)"
+        mainPage.style.background = 'url("/img/fondo.png")'
     }
 
     // Cambiar color de títulos de publicidad
