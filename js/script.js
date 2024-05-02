@@ -263,7 +263,11 @@ console.log(spanArray);
 
 // capturar elemento main
 let mainPage = document.querySelector(".main")
-mainPage.style.background = 'url("/img/fondo.png")';
+mainPage.style.backgroundImage = "url(/img/fondo.png)";
+console.log(mainPage);
+console.log(mainPage.style.backgroundImage)
+
+
 
 // capturar array de elementos h1 de publicidad
 
@@ -283,7 +287,6 @@ for (let j = 0; j < mainElementsArray.length; j++) {
     console.log(mainElementsArray[j].style.color);
 }
 
-
 // llamado a evento click
 btnFlotante.addEventListener("click", cambiarApariencia);
 
@@ -300,10 +303,13 @@ function cambiarApariencia() {
 
     // Cambiar imagen fondo de la página
 
-    if (mainPage.style.background == 'url("/img/fondo.png")') {
-        mainPage.style.background = 'url("/img/fondo2.jpg")'
+    if (mainPage.style.backgroundImage == 'url("/img/fondo.png")') {
+        console.log(mainPage.style.backgroundImage)
+        mainPage.style.backgroundImage = "url(/img/fondo2.jpg)";
+        console.log(mainPage.style.backgroundImage)
     } else{
-        mainPage.style.background = 'url("/img/fondo.png")'
+        mainPage.style.backgroundImage = "url(/img/fondo.png)"
+        console.log(mainPage.style.backgroundImage)
     }
 
     // Cambiar color de títulos de publicidad
