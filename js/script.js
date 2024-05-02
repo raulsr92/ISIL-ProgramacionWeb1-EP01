@@ -263,7 +263,6 @@ console.log(spanArray);
 
 // capturar elemento main
 let mainPage = document.querySelector(".main")
-mainPage.style.backgroundImage = "url(/img/fondo.png)";
 console.log(mainPage);
 console.log(mainPage.style.backgroundImage)
 
@@ -303,10 +302,14 @@ function cambiarApariencia() {
 
     // Cambiar imagen fondo de la página
 
-    if (mainPage.style.backgroundImage == 'url("/img/fondo.png")') {
-        mainPage.style.backgroundImage = "url(/img/fondo2.jpg)";
-    } else {
-        mainPage.style.backgroundImage = "url(/img/fondo.png)"
+    const mainIsWhite = mainPage.classList.contains("backgroundWhite");
+
+    if (mainIsWhite) {  // ¿El fondo es blanco?
+        mainPage.classList.remove("backgroundWhite");
+        mainPage.classList.add("backgroundBlack");
+    } else{
+        mainPage.classList.remove("backgroundBlack");
+        mainPage.classList.add("backgroundWhite");   
     }
 
     // Cambiar color de títulos de publicidad

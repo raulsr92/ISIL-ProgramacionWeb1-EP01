@@ -129,6 +129,14 @@ header nav>div{
 
 /*========================== Inicio Estilos Main ================= */
 
+.backgroundWhite{
+    background-image: url(/img/fondo.png);
+}
+
+.backgroundBlack{
+    background-image: url(/img/fondo2.jpg);
+}
+
 
 .main .carousel-item img{
     max-height: 70vh;
@@ -394,6 +402,7 @@ form{
     grid-column: 1 / 3;
     grid-row: 6 / 7;
 }
+
 
 .minibox{
     display: grid;
