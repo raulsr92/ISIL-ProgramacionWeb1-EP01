@@ -117,7 +117,7 @@ productos.forEach((element)=>{
                     <h5 class="card-title p-cards text-center">${element.producto}</h5>
                     <p class="p-cards p-cards__intimo text-center mb-2">S/ ${element.precioIntimo} <span class="badge text-bg-danger">Precio íntimo</span></p>
                     <p class="p-cards text-center mb-3">S/ ${element.precio}</p>
-                    <a href="#" class="btn btn-primary btn-main w-100">¡Lo quiero!</a>
+                    <a href="#" class="btn btn-primary btn-main w-100" id="btnComprar">¡Lo quiero!</a>
                 </div>
             </div>
         </div>`
@@ -216,7 +216,37 @@ function closeHeader() {
             navbarCollapse.style.display = "block"
         }
         
+}
 
+// =================== Interacción N° 05: Evento de Click en botones de "Lo Quiero"
+
+
+let btnPurchase = document.getElementsByClassName("btn-main");
+
+console.log(btnPurchase);
+
+for (let i = 0; i < btnPurchase.length; i++) {
+
+    btnPurchase[i].addEventListener("click", registerRequirement);
+    
+}
+
+function registerRequirement() {
+    Swal.fire({
+        title: "<strong>ANUNCIO</strong>",
+        html: `
+          <p>Debes registrarte para poder comprar.</p>
+        `,
+        showCloseButton: true,
+        showCancelButton: false,
+        focusConfirm: true,
+        confirmButtonText: `
+          <i class="fa fa-thumbs-up"></i> OK
+        `,
+        background: "#0F3B73",
+        color:"#F8F9FA",
+        confirmButtonColor: "#807C5A",
+      });
 }
 
 
