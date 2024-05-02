@@ -129,9 +129,6 @@ header nav>div{
 
 /*========================== Inicio Estilos Main ================= */
 
-main{
-    background-image: url(/img/fondo.png);
-}
 
 .main .carousel-item img{
     max-height: 70vh;
