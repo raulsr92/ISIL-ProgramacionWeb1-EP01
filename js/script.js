@@ -335,3 +335,8 @@ function cambiarApariencia() {
     }
 
 }
+
+
+// =================== Evaluación Permanente N° 02 - API FETCH
+
+

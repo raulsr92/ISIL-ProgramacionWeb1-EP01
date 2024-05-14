@@ -1,0 +1,248 @@
+{
+    "plantelAlianzaLima":[
+        {
+            "dorsal":"33",
+            "nombre":"Angelo Campos",
+            "nacimiento":"27/04/2024",
+            "edad": "31",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"campos.png"
+        },
+        {
+            "dorsal":"12",
+            "nombre":"Ángel De La Cruz",
+            "nacimiento":"24/05/2002",
+            "edad": "21",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"delacruz.png"
+        },
+        {
+            "dorsal":"32",
+            "nombre":"Franco Saravia",
+            "nacimiento":"02/06/1999",
+            "edad": "24",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"saravia.png"
+        },
+        {
+            "dorsal":"02",
+            "nombre":"Juan Pablo Freytes",
+            "nacimiento":"11/01/2000",
+            "edad": "24",
+            "pais":"Argentina",
+            "paisFlag":"arg.png",
+            "foto":"freytes.png"
+        },
+        {
+            "dorsal":"04",
+            "nombre":"Nicolás Amasifuen",
+            "nacimiento":"05/07/2005",
+            "edad": "18",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"amasifuen.png"
+        },
+        {
+            "dorsal":"06",
+            "nombre":"Renzo Garcés",
+            "nacimiento":"12/06/1996",
+            "edad": "27",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"garces.png"
+        },
+        {
+            "dorsal":"13",
+            "nombre":"Ricardo Lagos",
+            "nacimiento":"20/04/1996",
+            "edad": "28",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"lagos.png"
+        },
+        {
+            "dorsal":"20",
+            "nombre":"Aldair Fuentes",
+            "nacimiento":"25/01/1998",
+            "edad": "26",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"fuentes.png"
+        },
+        {
+            "dorsal":"21",
+            "nombre":"Sebastián Aranda",
+            "nacimiento":"07/10/2003",
+            "edad": "20",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"aranda.png"
+        },
+        {
+            "dorsal":"25",
+            "nombre":"Marco Huamán",
+            "nacimiento":"25/09/2002",
+            "edad": "21",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"huaman.png"
+        },
+        {
+            "dorsal":"29",
+            "nombre":"Jiovany Ramos",
+            "nacimiento":"26/01/1997",
+            "edad": "27",
+            "pais":"Panamá",
+            "paisFlag":"pana.png",
+            "foto":"ramos.png"
+        },
+        {
+            "dorsal":"31",
+            "nombre":"Yordi Vílchez",
+            "nacimiento":"13/02/1995",
+            "edad": "29",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"vilchez.png"
+        },
+        {
+            "dorsal":"05",
+            "nombre":"Adrián Arregui",
+            "nacimiento":"12/08/1992",
+            "edad": "31",
+            "pais":"Argentina",
+            "paisFlag":"arg.png",
+            "foto":"arregui.png"
+        },
+        {
+            "dorsal":"07",
+            "nombre":"Franco Zanelatto",
+            "nacimiento":"09/05/2000",
+            "edad": "24",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"zanelatto.png"
+        },
+        {
+            "dorsal":"08",
+            "nombre":"Gabriel Costa",
+            "nacimiento":"02/04/1990",
+            "edad": "34",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"costa.png"
+        },
+        {
+            "dorsal":"10",
+            "nombre":"Sebastián Rodríguez",
+            "nacimiento":"16/08/1992",
+            "edad": "32",
+            "pais":"Uruguay",
+            "paisFlag":"uru.png",
+            "foto":"rodriguez.png"
+        },
+        {
+            "dorsal":"14",
+            "nombre":"Axel Moyano",
+            "nacimiento":"03/01/2001",
+            "edad": "23",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"moyano.png"
+        },
+        {
+            "dorsal":"27",
+            "nombre":"Catriel Cabellos",
+            "nacimiento":"18/08/2004",
+            "edad": "19",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"cabellos.png"
+        },
+        {
+            "dorsal":"15",
+            "nombre":"Jesús Castillo",
+            "nacimiento":"10/03/1996",
+            "edad": "28",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"castillo.png"
+        },
+        {
+            "dorsal":"16",
+            "nombre":"Piero Vivanco",
+            "nacimiento":"17/01/2000",
+            "edad": "24",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"vivanco.png"
+        },
+        {
+            "dorsal":"18",
+            "nombre":"Jhamir D'Arrigo",
+            "nacimiento":"15/11/1999",
+            "edad": "24",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"darrigo.png"
+        },
+        {
+            "dorsal":"80",
+            "nombre":"Bassco Soyer",
+            "nacimiento":"17/10/2006",
+            "edad": "17",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"soyer.png"
+        },
+        {
+            "dorsal":"09",
+            "nombre":"Hernán Barcos",
+            "nacimiento":"11/04/1984",
+            "edad": "40",
+            "pais":"Argentina",
+            "paisFlag":"arg.png",
+            "foto":"barcos.png"
+        },
+        {
+            "dorsal":"22",
+            "nombre":"Victor Guzmán",
+            "nacimiento":"25/03/2006",
+            "edad": "18",
+            "pais":"Perú",
+            "paisFlag":"peru.png",
+            "foto":"guzman.png"
+        },
+        {
+            "dorsal":"26",
+            "nombre":"Kevin Serna",
+            "nacimiento":"17/12/1997",
+            "edad": "26",
+            "pais":"Colombia",
+            "paisFlag":"col.png",
+            "foto":"serna.png"
+        },
+        {
+            "dorsal":"26",
+            "nombre":"Cecilio Waterman",
+            "nacimiento":"13/04/1991",
+            "edad": "33",
+            "pais":"Panamá",
+            "paisFlag":"pana.png",
+            "foto":"waterman.png"
+        }
+        ,
+        {
+            "dorsal":"DT",
+            "nombre":"Alejandro Restrepo",
+            "nacimiento":"30/01/1982",
+            "edad": "42",
+            "pais":"Colombia",
+            "paisFlag":"col.png",
+            "foto":"restrepo.png"
+        }
+    ]
+}
