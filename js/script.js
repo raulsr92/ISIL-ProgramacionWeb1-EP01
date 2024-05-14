@@ -409,7 +409,6 @@ function cambiarApariencia() {
 // =================== Evaluación Permanente N° 02 - API FETCH
 
 
-let dataPlantilla = "../datos/plantilla.json";
 let arrayPlantilla =[];
 
 //capturar contenedor de las cards de jugadores
@@ -428,7 +427,7 @@ let cuerpoTecnicoContenedor = document.querySelector("#comando--container")
 
 // Hacer fetch al archivo JSON de la plantilla de jugadores
 
-fetch(dataPlantilla)
+fetch(`../datos/plantilla.json`)
 .then(resultado => {
     return resultado.json();
 })
@@ -663,5 +662,9 @@ fetch(dataPlantilla)
       </div>
       `
     });    
+
+})
+.catch(error =>{
+  alert(`Ha ocurrido el siguiente error: ${error}`)
 
 })
