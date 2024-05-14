@@ -586,7 +586,30 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
     .form__title{
         font-size: 28px;
     }
+}
 
+@media screen and (max-width: 416px){
+    .card-info{
+        position: relative;
+    }
+
+    .card-info__country-container{
+        position: absolute;
+        right: 10px;
+        top:15px
+    }
+    .card-info__name{
+        text-align:initial!important;
+    }
+    .card-info{
+        column-gap: 15px!important;
+    }
+    .card-info__cont {
+        align-items: start!important;
+    }
+    .card-info__year, .card-info__age{
+        font-size: 12px!important;
+    }
 }
 
 .inactive{
@@ -652,7 +675,7 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
 }
 
 .card-picture{
-    display: flex;
+    display: grid;
     position: relative;
     margin-bottom: 5px;
     border: 4px solid var(--main-color);
@@ -737,6 +760,23 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
 .card-info__dot{
     margin: 0;
     font-size: 20px;
+}
+
+.players--position{
+    border-top: 2px solid var(--main-color);
+}
+
+.players--position__title{
+    color: var(--extra-color-8);
+    margin: 0;
+}
+
+.players--position__background{
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: start;
+    padding: 10px 0px 10px 20px;
+    
 }
 
 /*========================== Fin Estilos para nueva sección de la EP02 - Jugadores ================= */
