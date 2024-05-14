@@ -14,6 +14,8 @@
     --extra-color-8:#F8F9FA;
     --extra-color-9:#DFDED6;
     --extra-color-10:#185FBA;
+    --extra-color-11:#0d2647;
+    --extra-color-12:#c1af73;
 }
 
 /* Importación de Tipografía de fontawesome */
@@ -633,3 +635,108 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
 
 
 /*========================== Fin Botón Flotante ================= */
+
+
+/*========================== Inicio Estilos para nueva sección de la EP02 - Jugadores ================= */
+
+.outer-image{
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid var(--secondary-color);
+
+}
+
+.inner-image{
+    border-radius: 5px;
+    border: 0 !important;
+}
+
+.card-picture{
+    display: flex;
+    position: relative;
+    margin-bottom: 5px;
+    border: 4px solid var(--main-color);
+}
+
+.card-picture__logo{
+    position: absolute;
+}
+
+.card-info{
+    display: flex;
+    padding: 20px 12px !important;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--extra-color-11);
+    column-gap: 5px;
+}
+
+.card-info__cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.card-info__personal{
+    display: flex;
+    align-items: center;
+    color: var(--extra-color-3);
+    font-size: 10px;
+    line-height: 10px;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.card-info__dorsal{
+    font-size: 35px;
+    font-weight: 900;
+    color: var(--extra-color-12);
+    margin: 0;
+}
+
+.card-info__name{
+    color: var(--extra-color-3);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    line-height: 22px;
+}
+
+.card-info__year{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.card-info__age{
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    column-gap: 4px;
+    color: var(--extra-color-8);
+}
+
+.card-info__age p{
+    margin: 0;
+}
+
+.card-info__country-container{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: 2px solid var(--extra-color-8);
+    display: flex;
+    border: 1px solid var(--main-color);
+}
+
+.card-info__dot{
+    margin: 0;
+    font-size: 20px;
+}
+
+/*========================== Fin Estilos para nueva sección de la EP02 - Jugadores ================= */
