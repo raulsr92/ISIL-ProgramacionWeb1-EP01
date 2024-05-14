@@ -726,7 +726,8 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
     font-size: 20px;
     margin: 0;
     text-align: center;
-    line-height: 22px;
+    line-height: 25px;
+    /*padding: 0px 8px;*/
 }
 
 .card-info__year{

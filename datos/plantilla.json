@@ -2,247 +2,274 @@
     "plantelAlianzaLima":[
         {
             "dorsal":"33",
-            "nombre":"Angelo Campos",
+            "nombre":"Angelo <br> Campos",
             "nacimiento":"27/04/2024",
             "edad": "31",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"campos.png"
+            "foto":"campos.png",
+            "posicion":"arquero"
         },
         {
             "dorsal":"12",
-            "nombre":"Ángel De La Cruz",
+            "nombre":"Ángel <br> De La Cruz",
             "nacimiento":"24/05/2002",
             "edad": "21",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"delacruz.png"
+            "foto":"delacruz.png",
+            "posicion":"arquero"
         },
         {
             "dorsal":"32",
-            "nombre":"Franco Saravia",
+            "nombre":"Franco <br> Saravia",
             "nacimiento":"02/06/1999",
             "edad": "24",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"saravia.png"
+            "foto":"saravia.png",
+            "posicion":"arquero"
         },
         {
             "dorsal":"02",
-            "nombre":"Juan Pablo Freytes",
+            "nombre":"Juan Pablo <br> Freytes",
             "nacimiento":"11/01/2000",
             "edad": "24",
             "pais":"Argentina",
             "paisFlag":"arg.png",
-            "foto":"freytes.png"
+            "foto":"freytes.png",
+            "posicion":"defensa"
         },
         {
             "dorsal":"04",
-            "nombre":"Nicolás Amasifuen",
+            "nombre":"Nicolás <br> Amasifuen",
             "nacimiento":"05/07/2005",
             "edad": "18",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"amasifuen.png"
+            "foto":"amasifuen.png",
+            "posicion":"defensa"
         },
         {
             "dorsal":"06",
-            "nombre":"Renzo Garcés",
+            "nombre":"Renzo <br> Garcés",
             "nacimiento":"12/06/1996",
             "edad": "27",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"garces.png"
+            "foto":"garces.png",
+            "posicion":"defensa"
         },
         {
             "dorsal":"13",
-            "nombre":"Ricardo Lagos",
+            "nombre":"Ricardo <br> Lagos",
             "nacimiento":"20/04/1996",
             "edad": "28",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"lagos.png"
+            "foto":"lagos.png",
+            "posicion":"defensa"
         },
         {
             "dorsal":"20",
-            "nombre":"Aldair Fuentes",
+            "nombre":"Aldair <br> Fuentes",
             "nacimiento":"25/01/1998",
             "edad": "26",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"fuentes.png"
+            "foto":"fuentes.png",
+            "posicion":"defensa"
         },
         {
             "dorsal":"21",
-            "nombre":"Sebastián Aranda",
+            "nombre":"Sebastián <br> Aranda",
             "nacimiento":"07/10/2003",
             "edad": "20",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"aranda.png"
+            "foto":"aranda.png",
+            "posicion":"defensa"
         },
         {
             "dorsal":"25",
-            "nombre":"Marco Huamán",
+            "nombre":"Marco <br> Huamán",
             "nacimiento":"25/09/2002",
             "edad": "21",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"huaman.png"
+            "foto":"huaman.png",
+            "posicion":"defensa"
         },
         {
             "dorsal":"29",
-            "nombre":"Jiovany Ramos",
+            "nombre":"Jiovany <br> Ramos",
             "nacimiento":"26/01/1997",
             "edad": "27",
             "pais":"Panamá",
             "paisFlag":"pana.png",
-            "foto":"ramos.png"
+            "foto":"ramos.png",
+            "posicion":"defensa"
         },
         {
             "dorsal":"31",
-            "nombre":"Yordi Vílchez",
+            "nombre":"Yordi <br> Vílchez",
             "nacimiento":"13/02/1995",
             "edad": "29",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"vilchez.png"
+            "foto":"vilchez.png",
+            "posicion":"defensa"
         },
         {
             "dorsal":"05",
-            "nombre":"Adrián Arregui",
+            "nombre":"Adrián <br> Arregui",
             "nacimiento":"12/08/1992",
             "edad": "31",
             "pais":"Argentina",
             "paisFlag":"arg.png",
-            "foto":"arregui.png"
+            "foto":"arregui.png",
+            "posicion":"volante"
         },
         {
             "dorsal":"07",
-            "nombre":"Franco Zanelatto",
+            "nombre":"Franco <br> Zanelatto",
             "nacimiento":"09/05/2000",
             "edad": "24",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"zanelatto.png"
+            "foto":"zanelatto.png",
+            "posicion":"volante"
         },
         {
             "dorsal":"08",
-            "nombre":"Gabriel Costa",
+            "nombre":"Gabriel <br> Costa",
             "nacimiento":"02/04/1990",
             "edad": "34",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"costa.png"
+            "foto":"costa.png",
+            "posicion":"volante"
         },
         {
             "dorsal":"10",
-            "nombre":"Sebastián Rodríguez",
+            "nombre":"Sebastián <br> Rodríguez",
             "nacimiento":"16/08/1992",
             "edad": "32",
             "pais":"Uruguay",
             "paisFlag":"uru.png",
-            "foto":"rodriguez.png"
+            "foto":"rodriguez.png",
+            "posicion":"volante"
         },
         {
             "dorsal":"14",
-            "nombre":"Axel Moyano",
+            "nombre":"Axel <br> Moyano",
             "nacimiento":"03/01/2001",
             "edad": "23",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"moyano.png"
+            "foto":"moyano.png",
+            "posicion":"volante"
         },
         {
             "dorsal":"27",
-            "nombre":"Catriel Cabellos",
+            "nombre":"Catriel <br> Cabellos",
             "nacimiento":"18/08/2004",
             "edad": "19",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"cabellos.png"
+            "foto":"cabellos.png",
+            "posicion":"volante"
         },
         {
             "dorsal":"15",
-            "nombre":"Jesús Castillo",
+            "nombre":"Jesús <br> Castillo",
             "nacimiento":"10/03/1996",
             "edad": "28",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"castillo.png"
+            "foto":"castillo.png",
+            "posicion":"volante"
         },
         {
             "dorsal":"16",
-            "nombre":"Piero Vivanco",
+            "nombre":"Piero <br> Vivanco",
             "nacimiento":"17/01/2000",
             "edad": "24",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"vivanco.png"
+            "foto":"vivanco.png",
+            "posicion":"volante"
         },
         {
             "dorsal":"18",
-            "nombre":"Jhamir D'Arrigo",
+            "nombre":"Jhamir <br> D'Arrigo",
             "nacimiento":"15/11/1999",
             "edad": "24",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"darrigo.png"
+            "foto":"darrigo.png",
+            "posicion":"volante"
         },
         {
             "dorsal":"80",
-            "nombre":"Bassco Soyer",
+            "nombre":"Bassco <br> Soyer",
             "nacimiento":"17/10/2006",
             "edad": "17",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"soyer.png"
+            "foto":"soyer.png",
+            "posicion":"volante"
         },
         {
             "dorsal":"09",
-            "nombre":"Hernán Barcos",
+            "nombre":"Hernán <br> Barcos",
             "nacimiento":"11/04/1984",
             "edad": "40",
             "pais":"Argentina",
             "paisFlag":"arg.png",
-            "foto":"barcos.png"
+            "foto":"barcos.png",
+            "posicion":"delantero"
         },
         {
             "dorsal":"22",
-            "nombre":"Victor Guzmán",
+            "nombre":"Victor <br> Guzmán",
             "nacimiento":"25/03/2006",
             "edad": "18",
             "pais":"Perú",
             "paisFlag":"peru.png",
-            "foto":"guzman.png"
+            "foto":"guzman.png",
+            "posicion":"delantero"
         },
         {
             "dorsal":"26",
-            "nombre":"Kevin Serna",
+            "nombre":"Kevin <br> Serna",
             "nacimiento":"17/12/1997",
             "edad": "26",
             "pais":"Colombia",
             "paisFlag":"col.png",
-            "foto":"serna.png"
+            "foto":"serna.png",
+            "posicion":"delantero"
         },
         {
             "dorsal":"30",
-            "nombre":"Cecilio Waterman",
+            "nombre":"Cecilio <br> Waterman",
             "nacimiento":"13/04/1991",
             "edad": "33",
             "pais":"Panamá",
             "paisFlag":"pana.png",
-            "foto":"waterman.png"
+            "foto":"waterman.png",
+            "posicion":"delantero"
         }
         ,
         {
             "dorsal":"DT",
-            "nombre":"Alejandro Restrepo",
+            "nombre":"Alejandro <br> Restrepo",
             "nacimiento":"30/01/1982",
             "edad": "42",
             "pais":"Colombia",
             "paisFlag":"col.png",
-            "foto":"restrepo.png"
+            "foto":"restrepo.png",
+            "posicion":"comando"
         }
     ]
 }
