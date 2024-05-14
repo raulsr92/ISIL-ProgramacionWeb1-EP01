@@ -788,25 +788,42 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
     font-size: 20px;
 }
 
-.players--position{
-    border-top: 2px solid var(--main-color);
+.border-type-1{
+    border-top: 3px solid var(--main-color);
+}
+
+.border-type-2{
+    border-top: 3px solid var(--secondary-color);
 }
 
 .players--position__title{
-    color: var(--extra-color-8);
     margin: 0;
     font-size: 26px;
     font-weight: 700;
 }
 
 .players--position__background{
-    background-color: var(--main-color);
     display: flex;
     justify-content: start;
     padding: 10px 0px 10px 20px;  
     border-bottom-right-radius: 30px;
 }
 
+.mode1{
+    background-color: var(--main-color);
+}
 
+.mode2{
+    background-color: var(--secondary-color);
+}
+
+.text-color1{
+    color: var(--extra-color-8);
+
+}
+
+.text-color2{
+    color: var(--extra-color-8);
+}
 
 /*========================== Fin Estilos para nueva sección de la EP02 - Jugadores ================= */

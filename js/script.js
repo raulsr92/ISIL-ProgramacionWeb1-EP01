@@ -22,7 +22,7 @@ Swal.fire({
 
 const productos =[
     {
-        producto: "Camiseta Away Mujer 2024",
+        producto: "Camiseta Away <br> Mujer 2024",
         precio: 249.9,
         precioIntimo:229.9,
         imagen: "./img/Producto1-AL.jpg"
@@ -43,7 +43,7 @@ const productos =[
     },
 
     {
-        producto: "Gorra Alianza Lima Nike 2024",
+        producto: "Gorra Alianza Lima <br> Nike 2024",
         precio: 89.9,
         precioIntimo:79.9,
         imagen: "./img/Producto4-AL.jpg"
@@ -61,31 +61,31 @@ const productos =[
         imagen: "./img/Producto6-AL.jpg"
     },
     {
-        producto: "Polo de Algodón Azul Alianza Lima",
+        producto: "Polo de Algodón Azul <br> Alianza Lima",
         precio: 99.9,
         precioIntimo: 79.9,
         imagen: "./img/Producto7-AL.jpg"
     },
     {
-        producto: "Polo Nike Azul de concentración",
+        producto: "Polo Nike Azul <br> de concentración",
         precio: 159.0,
         precioIntimo: 149.9,
         imagen: "./img/Producto8-AL.jpg"
     },
     {
-        producto: "Bandera Oficial Club Alianza Lima",
+        producto: "Bandera Oficial <br> Club Alianza Lima",
         precio: 39.90,
         precioIntimo: 34.9,
         imagen: "./img/Producto9-AL.jpg"
     },
     {
-        producto: "Banderín oficial - Club Alianza Lima",
+        producto: "Banderín oficial <br> Club Alianza Lima",
         precio: 99.90,
         precioIntimo: 89.9,
         imagen: "./img/Producto10-AL.jpg"
     },
     {
-        producto: "Rompecabezas Señor de los Milagros",
+        producto: "Rompecabezas Señor <br> de los Milagros",
         precio: 79.90,
         precioIntimo: 69.9,
         imagen: "./img/Producto11-AL.jpg"
@@ -252,10 +252,12 @@ function registerRequirement() {
 let btnFlotante = document.querySelector(".enlace-btn-flotante");
 console.log(btnFlotante)
 
-// capturar array de elementos h1
-let mainTitle = document.querySelector(".mainTitle")
-mainTitle.style.color = "#000D1E"
-console.log(mainTitle.style.color);
+// capturar array de elementos h1 (para la ep02 se capturó array por el ´titulo añadido en la última sección)
+let mainTitle = document.getElementsByClassName("mainTitle")
+
+for (let j = 0; j < mainTitle.length; j++) {
+    mainTitle[j].style.color = "#000D1E"
+}
 
 //capturar elementos span
 let spanArray = document.getElementsByClassName("spanEdited")
@@ -266,7 +268,20 @@ let mainPage = document.querySelector(".main")
 console.log(mainPage);
 console.log(mainPage.style.backgroundImage)
 
+// capturar a los textos que indican la posicion del jugador (ultima seccion) -array
 
+let textPosition = document.getElementsByClassName("players--position__title")
+console.log(textPosition);
+
+// capturar a a la caja que contiene la posicion del jugador (ultima seccion) - array
+
+let boxPosition = document.getElementsByClassName("players--position__background")
+console.log(boxPosition);
+
+// capturar a a la caja que contiene la posicion del jugador (ultima seccion) - array
+
+let linePlayers = document.getElementsByClassName("players--position")
+console.log(linePlayers);
 
 // capturar array de elementos h1 de publicidad
 
@@ -293,12 +308,20 @@ function cambiarApariencia() {
 
     //Cambiar color de título principal 
 
-    if(mainTitle.style.color == "rgb(0, 13, 30)"){
+   /* if(mainTitle.style.color == "rgb(0, 13, 30)"){
         mainTitle.style.color = "#F8F9FA"
     } else{
         mainTitle.style.color = "#000D1E"
-    }
+    }*/
 
+    for (let i = 0; i < mainTitle.length; i++) {
+        if(mainTitle[i].style.color == "rgb(0, 13, 30)"){
+            mainTitle[i].style.color = "#F8F9FA"
+        } else{
+            mainTitle[i].style.color = "#000D1E"
+        }
+    
+    }
 
     // Cambiar imagen fondo de la página
 
@@ -310,6 +333,52 @@ function cambiarApariencia() {
     } else{
         mainPage.classList.remove("backgroundBlack");
         mainPage.classList.add("backgroundWhite");   
+    }
+
+    // Cambiar de texto de la posicion de los jugadores
+
+    for (let i = 0; i < textPosition.length; i++) {
+
+        const textIsWhite = textPosition[i].classList.contains("text-color1");
+
+        if (textIsWhite) {  // ¿El texto es blanco?
+            textPosition[i].classList.remove("text-color1");
+            textPosition[i].classList.add("text-color2");
+        } else{
+            textPosition[i].classList.remove("text-color2");
+            textPosition[i].classList.add("text-color1");   
+        }
+    }
+
+
+    // Cambiar de fondo de la caja que contiene la posicion de los jugadores
+
+    for (let i = 0; i < boxPosition.length; i++) {
+
+        const backisDark = boxPosition[i].classList.contains("mode1");
+
+        if (backisDark) {  // ¿El fondo es oscuro?
+            boxPosition[i].classList.remove("mode1");
+            boxPosition[i].classList.add("mode2");
+        } else{
+            boxPosition[i].classList.remove("mode2");
+            boxPosition[i].classList.add("mode1");   
+        }
+    }
+
+    // Cambiar el color de la línea que está encima de la posición de c/ jugador
+
+    for (let i = 0; i < linePlayers.length; i++) {
+
+        const lineisDark = linePlayers[i].classList.contains("border-type-1");
+
+        if (lineisDark) {  // ¿La línea es ocura?
+            linePlayers[i].classList.remove("border-type-1");
+            linePlayers[i].classList.add("border-type-2");
+        } else{
+            linePlayers[i].classList.remove("border-type-2");
+            linePlayers[i].classList.add("border-type-1");   
+        }
     }
 
     // Cambiar color de títulos de publicidad
