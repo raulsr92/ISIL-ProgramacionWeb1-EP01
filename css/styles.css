@@ -769,14 +769,18 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
 .players--position__title{
     color: var(--extra-color-8);
     margin: 0;
+    font-size: 26px;
+    font-weight: 700;
 }
 
 .players--position__background{
     background-color: var(--main-color);
     display: flex;
     justify-content: start;
-    padding: 10px 0px 10px 20px;
-    
+    padding: 10px 0px 10px 20px;  
+    border-bottom-right-radius: 30px;
 }
+
+
 
 /*========================== Fin Estilos para nueva sección de la EP02 - Jugadores ================= */

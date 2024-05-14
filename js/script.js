@@ -340,3 +340,63 @@ function cambiarApariencia() {
 // =================== Evaluación Permanente N° 02 - API FETCH
 
 
+let dataPlantilla = `../datos/plantilla.json`;
+let arrayPlantilla =[];
+
+//capturar contenedor de las cards de jugadores
+
+let plantillaContenedor = document.querySelector("#arqueros--container")
+console.log(plantillaContenedor);
+
+// Hacer fetch al archivo JSON de la plantilla de jugadores
+
+fetch(dataPlantilla)
+.then(resultado => {
+    return resultado.json();
+})
+.then(datos =>{
+    arrayPlantilla=datos.plantelAlianzaLima;
+
+    console.log(arrayPlantilla);
+
+    arrayPlantilla.forEach(player => {
+        plantillaContenedor.innerHTML += `
+        <div class="col-9 col-sm-8 col-md-6 col-lg-4 col-xxl-3 p-2">
+        <div class="outer-image">
+          <div class="card inner-image">
+            <div class="card-picture">
+              <img src="./img/logo-dorado.jpg" alt="" style="width: 60px;" class="card-picture__logo">
+              <a href="#">
+                <img src="./img/${player.foto}" class="card-img-top" alt="...">
+              </a>
+            </div>
+
+            <div class="card-body card-info">
+              <p class="card-text card-info__dorsal">${player.dorsal}</p>
+              <div class="card-info__cont"> 
+                <p class="card-title card-info__name">${player.nombre}</p>
+
+                <div class="card-info__personal">
+                  <p class="card-info__year">${player.nacimiento}</p>
+                  <p class="card-info__dot">| </p>
+                  <div class="card-info__age">
+                    <p>${player.edad}</p><span>años</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-info__country-container">
+                <img class="card-info__country" src="./img/${player.paisFlag}" alt="" style="width: 40px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        
+        
+        `
+    });
+
+
+})
