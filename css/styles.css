@@ -575,6 +575,11 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
     .form__option{
         text-align: center;
     }
+
+    .card-info{
+        justify-content: center!important;
+        column-gap: 10px!important;
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -591,15 +596,21 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
 @media screen and (max-width: 416px){
     .card-info{
         position: relative;
+        justify-content: start!important;
+
     }
 
     .card-info__country-container{
         position: absolute;
         right: 10px;
-        top:15px
+        top:calc(50% - 20px)!important;
     }
     .card-info__name{
         text-align:initial!important;
+        font-size: 18px!important;
+    }
+    .card-info__dorsal{
+        font-size: 30px!important;
     }
     .card-info{
         column-gap: 15px!important;
@@ -609,6 +620,20 @@ input[type="text"]::placeholder,  input[type="password"]::placeholder{
     }
     .card-info__year, .card-info__age{
         font-size: 12px!important;
+    }
+    .card-info__country-container{
+        width: 30px!important;
+        height: 30px!important;
+    }
+    .card-info__country{
+        width: 100%!important;
+    }
+}
+
+@media screen and (max-width: 380px){
+
+    .card-info{
+        column-gap: 10px!important;
     }
 }
 
