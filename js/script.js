@@ -409,7 +409,7 @@ function cambiarApariencia() {
 // =================== Evaluación Permanente N° 02 - API FETCH
 
 
-let dataPlantilla = `../datos/plantilla.json`;
+let dataPlantilla = "../datos/plantilla.json";
 let arrayPlantilla =[];
 
 //capturar contenedor de las cards de jugadores
@@ -433,7 +433,7 @@ fetch(dataPlantilla)
     return resultado.json();
 })
 .then(datos =>{
-    // Cpaturar array con toda la plantilla del club
+    // Capturar array con toda la plantilla del club
     arrayPlantilla=datos.plantelAlianzaLima;
 
     console.log(arrayPlantilla);
@@ -523,10 +523,7 @@ fetch(dataPlantilla)
             </div>
           </div>
         </div>
-      </div>
-        
-        
-        
+      </div> 
         `
     });
 
@@ -580,7 +577,7 @@ fetch(dataPlantilla)
     //Filtrar array con los delanteros  (método filter)
 
     let arrayDelanteros = arrayPlantilla.filter(player => player.posicion=="delantero")
-    console.log(arrayVolantes);
+    console.log(arrayDelanteros);
 
     //Recorrer array de volantes y mostrarlos donde corresponde (método forEach)
 
@@ -664,10 +661,7 @@ fetch(dataPlantilla)
           </div>
         </div>
       </div>
-        
-        
-        
-        `
+      `
     });    
 
 })
