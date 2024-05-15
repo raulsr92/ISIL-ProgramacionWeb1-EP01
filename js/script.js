@@ -427,7 +427,252 @@ let cuerpoTecnicoContenedor = document.querySelector("#comando--container")
 
 // Hacer fetch al archivo JSON de la plantilla de jugadores
 
-fetch(`../datos/plantilla.json`)
+/*
+let plantillaJugadores = async() =>{
+  try {
+    let plantilla = await fetch(`../datos/plantilla.json`);
+    let datos = await plantilla.json();
+
+    console.log(datos);
+    arrayPlantilla=datos.plantelAlianzaLima;
+    console.log(arrayPlantilla);
+
+        //Filtrar array con los arqueros  (método filter)
+
+        let arrayArqueros = arrayPlantilla.filter(player => player.posicion=="arquero")
+        console.log(arrayArqueros);
+    
+        //Recorrer array de arqueros y mostrarlos donde corresponde (método forEach)
+    
+        arrayArqueros.forEach(player => {
+            arquerosContenedor.innerHTML += `
+            <div class="col-9 col-sm-8 col-md-6 col-lg-4 col-xxl-3 p-2">
+            <div class="outer-image">
+              <div class="card inner-image">
+                <div class="card-picture">
+                  <img src="./img/logo-dorado.jpg" alt="" style="width: 60px;" class="card-picture__logo">
+                  <a href="#">
+                    <img src="./img/${player.foto}" class="card-img-top" alt="...">
+                  </a>
+                </div>
+    
+                <div class="card-body card-info">
+                  <p class="card-text card-info__dorsal">${player.dorsal}</p>
+                  <div class="card-info__cont"> 
+                    <p class="card-title card-info__name">${player.nombre}</p>
+    
+                    <div class="card-info__personal">
+                      <p class="card-info__year">${player.nacimiento}</p>
+                      <p class="card-info__dot">| </p>
+                      <div class="card-info__age">
+                        <p>${player.edad}</p><span>años</span>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="card-info__country-container">
+                    <img class="card-info__country" src="./img/${player.paisFlag}" alt="" style="width: 40px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+            
+            
+            `
+        });
+        
+        //Filtrar array con los defensas  (método filter)
+    
+        let arrayDefensas = arrayPlantilla.filter(player => player.posicion=="defensa")
+        console.log(arrayDefensas);
+    
+        //Recorrer array de defensas y mostrarlos donde corresponde (método forEach)
+    
+        arrayDefensas.forEach(player => {
+            defensasContenedor.innerHTML += `
+            <div class="col-9 col-sm-8 col-md-6 col-lg-4 col-xxl-3 p-2">
+            <div class="outer-image">
+              <div class="card inner-image">
+                <div class="card-picture">
+                  <img src="./img/logo-dorado.jpg" alt="" style="width: 60px;" class="card-picture__logo">
+                  <a href="#">
+                    <img src="./img/${player.foto}" class="card-img-top" alt="...">
+                  </a>
+                </div>
+    
+                <div class="card-body card-info">
+                  <p class="card-text card-info__dorsal">${player.dorsal}</p>
+                  <div class="card-info__cont"> 
+                    <p class="card-title card-info__name">${player.nombre}</p>
+    
+                    <div class="card-info__personal">
+                      <p class="card-info__year">${player.nacimiento}</p>
+                      <p class="card-info__dot">| </p>
+                      <div class="card-info__age">
+                        <p>${player.edad}</p><span>años</span>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="card-info__country-container">
+                    <img class="card-info__country" src="./img/${player.paisFlag}" alt="" style="width: 40px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+            `
+        });
+    
+        //Filtrar array con los volantes  (método filter)
+    
+        let arrayVolantes = arrayPlantilla.filter(player => player.posicion=="volante")
+        console.log(arrayVolantes);
+    
+        //Recorrer array de volantes y mostrarlos donde corresponde (método forEach)
+    
+        arrayVolantes.forEach(player => {
+            volantesContenedor.innerHTML += `
+            <div class="col-9 col-sm-8 col-md-6 col-lg-4 col-xxl-3 p-2">
+            <div class="outer-image">
+              <div class="card inner-image">
+                <div class="card-picture">
+                  <img src="./img/logo-dorado.jpg" alt="" style="width: 60px;" class="card-picture__logo">
+                  <a href="#">
+                    <img src="./img/${player.foto}" class="card-img-top" alt="...">
+                  </a>
+                </div>
+    
+                <div class="card-body card-info">
+                  <p class="card-text card-info__dorsal">${player.dorsal}</p>
+                  <div class="card-info__cont"> 
+                    <p class="card-title card-info__name">${player.nombre}</p>
+    
+                    <div class="card-info__personal">
+                      <p class="card-info__year">${player.nacimiento}</p>
+                      <p class="card-info__dot">| </p>
+                      <div class="card-info__age">
+                        <p>${player.edad}</p><span>años</span>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="card-info__country-container">
+                    <img class="card-info__country" src="./img/${player.paisFlag}" alt="" style="width: 40px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+            
+            
+            `
+        });
+    
+        
+        //Filtrar array con los delanteros  (método filter)
+    
+        let arrayDelanteros = arrayPlantilla.filter(player => player.posicion=="delantero")
+        console.log(arrayDelanteros);
+    
+        //Recorrer array de volantes y mostrarlos donde corresponde (método forEach)
+    
+        arrayDelanteros.forEach(player => {
+            delanterosContenedor.innerHTML += `
+            <div class="col-9 col-sm-8 col-md-6 col-lg-4 col-xxl-3 p-2">
+            <div class="outer-image">
+              <div class="card inner-image">
+                <div class="card-picture">
+                  <img src="./img/logo-dorado.jpg" alt="" style="width: 60px;" class="card-picture__logo">
+                  <a href="#">
+                    <img src="./img/${player.foto}" class="card-img-top" alt="...">
+                  </a>
+                </div>
+    
+                <div class="card-body card-info">
+                  <p class="card-text card-info__dorsal">${player.dorsal}</p>
+                  <div class="card-info__cont"> 
+                    <p class="card-title card-info__name">${player.nombre}</p>
+    
+                    <div class="card-info__personal">
+                      <p class="card-info__year">${player.nacimiento}</p>
+                      <p class="card-info__dot">| </p>
+                      <div class="card-info__age">
+                        <p>${player.edad}</p><span>años</span>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="card-info__country-container">
+                    <img class="card-info__country" src="./img/${player.paisFlag}" alt="" style="width: 40px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+            
+            
+            `
+        });
+    
+    
+        //Filtrar array con los miembros del comando técnico  (método filter)
+    
+        let arrayComando = arrayPlantilla.filter(player => player.posicion=="comando")
+        console.log(arrayComando);
+    
+        //Recorrer array de volantes y mostrarlos donde corresponde (método forEach)
+    
+        arrayComando.forEach(player => {
+            cuerpoTecnicoContenedor.innerHTML += `
+            <div class="col-9 col-sm-8 col-md-6 col-lg-4 col-xxl-3 p-2">
+            <div class="outer-image">
+              <div class="card inner-image">
+                <div class="card-picture">
+                  <img src="./img/logo-dorado.jpg" alt="" style="width: 60px;" class="card-picture__logo">
+                  <a href="#">
+                    <img src="./img/${player.foto}" class="card-img-top" alt="...">
+                  </a>
+                </div>
+    
+                <div class="card-body card-info">
+                  <p class="card-text card-info__dorsal">${player.dorsal}</p>
+                  <div class="card-info__cont"> 
+                    <p class="card-title card-info__name">${player.nombre}</p>
+    
+                    <div class="card-info__personal">
+                      <p class="card-info__year">${player.nacimiento}</p>
+                      <p class="card-info__dot">| </p>
+                      <div class="card-info__age">
+                        <p>${player.edad}</p><span>años</span>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="card-info__country-container">
+                    <img class="card-info__country" src="./img/${player.paisFlag}" alt="" style="width: 40px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          `
+        });    
+
+
+  } catch (error) {
+    alert(`Ha ocurrido un error ${error}`)
+  }
+}
+
+plantillaJugadores();
+*/
+
+fetch("../datos/plantilla.json")
 .then(resultado => {
     return resultado.json();
 })
@@ -668,3 +913,4 @@ fetch(`../datos/plantilla.json`)
   alert(`Ha ocurrido el siguiente error: ${error}`)
 
 })
+
